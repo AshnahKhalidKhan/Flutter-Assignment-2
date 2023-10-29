@@ -10,3 +10,27 @@ maxLengthEnforcement: MaxLengthEnforcement.none,
 
 https://docs.flutter.dev/cookbook/navigation/navigation-basics
 https://docs.flutter.dev/release/breaking-changes/use-maxLengthEnforcement-instead-of-maxLengthEnforced#:~:text=To%20show%20a%20max%20length,none%20instead%20of%20maxLengthEnforced%3A%20false%20.&text=For%20CupertinoTextField%20%2C%20which%20isn't,t%20set%20the%20maxLength%20value.
+
+
+// TextFormField
+// (
+//   decoration: InputDecoration
+//   (
+//     border: OutlineInputBorder
+//     (
+//       borderRadius: BorderRadius.circular(10.0),
+//       borderSide: const BorderSide
+//       (
+//         color: Color.fromARGB(255, 138, 129, 168),
+//         width: 2.0,
+//         style:BorderStyle.solid
+//       )
+//     ),
+//   ),
+//   initialValue: 'Email',
+//   style: const TextStyle
+//   (
+//     color: Color.fromARGB(255, 138, 129, 168),
+//     fontWeight: FontWeight.w700
+//   ),
+// ),
