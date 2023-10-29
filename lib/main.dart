@@ -23,8 +23,8 @@ class MainApp extends StatelessWidget
       //     child: Text('Hello World!'),
       //   ),
       // ),
-      // home: LightThemeSignInScreen(),
-      home: LightThemeSignUpScreen(),
+      home: LightThemeSignInScreen(),
+      // home: LightThemeSignUpScreen(),
     );
   }
 }
