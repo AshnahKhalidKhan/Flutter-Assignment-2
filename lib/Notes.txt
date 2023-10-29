@@ -34,3 +34,8 @@ https://docs.flutter.dev/release/breaking-changes/use-maxLengthEnforcement-inste
 //     fontWeight: FontWeight.w700
 //   ),
 // ),
+
+
+
+Remember this:
+resizeToAvoidBottomInset: true

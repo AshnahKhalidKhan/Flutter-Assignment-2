@@ -208,7 +208,7 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10.0),
+                    const SizedBox(height: 20.0),
                     GestureDetector
                     (
                       child: const Text
@@ -249,7 +249,7 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
   {
     return Scaffold
     (
-      // // resizeToAvoidBottomInset: true,
+      resizeToAvoidBottomInset: true,
       // body: SingleChildScrollView(child:
       // Column
       // (
@@ -509,7 +509,8 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
       //   ],
       // ),
       // ),
-      resizeToAvoidBottomInset: true,
+
+      // resizeToAvoidBottomInset: true,
       body: SafeArea
       (
         child: Column
