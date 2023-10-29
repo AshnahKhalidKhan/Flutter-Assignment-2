@@ -29,7 +29,7 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
               (
                 'lib/Assets/asset2.jpg', 
                 width: double.maxFinite,
-                fit: BoxFit.contain,
+                fit: BoxFit.fill,
               ),
             ),
           ),

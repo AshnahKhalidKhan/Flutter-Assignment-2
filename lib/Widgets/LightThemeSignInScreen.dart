@@ -252,7 +252,7 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                           Navigator.push
                           (
                             context,
-                            MaterialPageRoute(builder: (context) => const LightThemeSignUpScreen()),
+                            CupertinoPageRoute(builder: (context) => const LightThemeSignUpScreen()),
                           );
                         },
                       ),
@@ -312,7 +312,7 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
               (
                 'lib/Assets/asset2.jpg', 
                 width: double.maxFinite,
-                fit: BoxFit.contain,
+                fit: BoxFit.fill,
               ),
             ),
           ),
