@@ -1,0 +1,3 @@
+Always go:
+1. Expanded -> child: Container
+2. Expanded -> child: Padding -> child: Column
