@@ -69,6 +69,9 @@ void main()
 // }
 
 
+
+// I've used ChatGPT for this whole main file code below
+
 class MainApp extends StatelessWidget {
   const MainApp({Key? key}) : super(key: key);
 
