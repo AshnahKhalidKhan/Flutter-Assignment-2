@@ -18,103 +18,92 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
     (
       body: Padding
       (
-        padding: EdgeInsets.all(20.0),
+        padding: const EdgeInsets.all(30.0),
         child: Column
         (
           mainAxisAlignment: MainAxisAlignment.end,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: 
           [
-            Text
+            const Text
             (
               "Log In",
               style: TextStyle
               (
-                fontSize: 10,
+                fontSize: 15,
               ),
             ),
-            Column
+            TextFormField
             (
+              decoration: InputDecoration
+              (
+                border: OutlineInputBorder
+                (
+                  borderRadius: BorderRadius.circular(10.0)
+                )
+              ),
+              initialValue: 'Email',
+            ),
+            const SizedBox(height: 20.0),
+            TextFormField
+            (
+              decoration: InputDecoration
+              (
+                border: OutlineInputBorder
+                (
+                  borderRadius: BorderRadius.circular(10.0)
+                )
+              ),
+              initialValue: 'Password',
+            ),
+            const SizedBox(height: 20.0),
+            FilledButton.tonal
+            (
+              onPressed: () {},
+              child: Text('Sign In')
+            ),
+            const SizedBox(height: 20.0),
+            Row
+            (
+              mainAxisAlignment: MainAxisAlignment.start,
               children: 
               [
-                TextFormField
+                const Text
                 (
-                  decoration: InputDecoration
-                  (
-                    border: OutlineInputBorder
-                    (
-                      borderRadius: BorderRadius.circular(10.0)
-                    )
-                  ),
-                  initialValue: 'Email',
+                  "Don't have an account?",
                   style: TextStyle
                   (
-                    
+                    fontSize: 15,
                   ),
                 ),
-                TextFormField
-                (
-                  decoration: InputDecoration
-                  (
-                    border: OutlineInputBorder
-                    (
-                      borderRadius: BorderRadius.circular(10.0)
-                    )
-                  ),
-                  initialValue: 'Password',
-                  style: TextStyle
-                  (
-                    
-                  ),
-                ),
-                FilledButton.tonal
-                (
-                  onPressed: () {},
-                  child: Text('Sign In')
-                ),
-                Row
-                (
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: 
-                  [
-                    Text
-                    (
-                      "Don't have an account?",
-                      style: TextStyle
-                      (
-                        fontSize: 10,
-                      ),
-                    ),
-                    SizedBox(width: 2.0,),
-                    GestureDetector
-                    (
-                      child: Text
-                      (
-                        "Sign Up",
-                        style: TextStyle
-                        (
-                          fontSize: 10,
-                        ),
-                      ),
-                      onTap: () {},
-                    ),
-                  ],
-                ),
+                const SizedBox(width: 2.0),
                 GestureDetector
                 (
-                  child: Text
+                  child: const Text
                   (
-                    "Forgot Password",
+                    "Sign Up",
                     style: TextStyle
                     (
-                      fontSize: 10,
+                      fontSize: 15,
                     ),
                   ),
                   onTap: () {},
                 ),
-
               ],
-            )
+            ),
+            const SizedBox(height: 20.0),
+            GestureDetector
+            (
+              child: const Text
+              (
+                "Forgot Password?",
+                style: TextStyle
+                (
+                  fontSize: 15,
+                ),
+              ),
+              onTap: () {},
+            ),
           ]
         ),
       ),
