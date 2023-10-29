@@ -402,68 +402,169 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
                     ),
                   ),
                   const SizedBox(height: 20.0),
+                  // Expanded(child:
                   Row
                   (
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: 
                     [
-                      TextFormField
+                      Expanded(child: 
+                      const TextField
                       (
+                        // controller: _usernameController,
+                        textAlign: TextAlign.center,
+                        expands: false,
+                        obscureText: true,
                         decoration: InputDecoration
                         (
-                          constraints: BoxConstraints
+                          filled: true,
+                          fillColor: Colors.white,
+                          label: Text
                           (
-                            minWidth: MediaQuery.sizeOf(context).width / 2.7,
-                            maxWidth: MediaQuery.sizeOf(context).width / 2.7,
+                            "Password",
+                            textAlign: TextAlign.start,
+                            style: TextStyle
+                            (
+                              color: Color.fromARGB(255, 138, 129, 168),
+                              fontWeight: FontWeight.w700
+                            ),
                           ),
+                          hintText: 'Create password',
                           border: OutlineInputBorder
                           (
-                            borderRadius: BorderRadius.circular(10.0),
-                            borderSide: const BorderSide
+                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                            borderSide: BorderSide
                             (
                               color: Color.fromARGB(255, 138, 129, 168),
                               width: 2.0,
                               style:BorderStyle.solid
                             )
                           ),
-                        ),
-                        initialValue: 'Password',
-                        style: const TextStyle
-                        (
-                          color: Color.fromARGB(255, 138, 129, 168),
-                          fontWeight: FontWeight.w700
+                          focusedBorder: OutlineInputBorder
+                          (
+                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                            borderSide: BorderSide
+                            (
+                              color: Color.fromARGB(255, 167, 152, 216),
+                              width: 2.0,
+                              style:BorderStyle.solid
+                            )
+                          ),
                         ),
                       ),
-                      TextFormField
+                      ),
+                      SizedBox(width: 20.0),
+                      Expanded(child: 
+                      const TextField
                       (
+                        // controller: _usernameController,
+                        textAlign: TextAlign.center,
+                        expands: false,
+                        obscureText: true,
                         decoration: InputDecoration
                         (
-                          constraints: BoxConstraints
+                          filled: true,
+                          fillColor: Colors.white,
+                          label: Text
                           (
-                            minWidth: MediaQuery.sizeOf(context).width / 2.7,
-                            maxWidth: MediaQuery.sizeOf(context).width / 2.7,
+                            "Password",
+                            textAlign: TextAlign.start,
+                            style: TextStyle
+                            (
+                              color: Color.fromARGB(255, 138, 129, 168),
+                              fontWeight: FontWeight.w700
+                            ),
                           ),
+                          hintText: 'Confirm password',
                           border: OutlineInputBorder
                           (
-                            borderRadius: BorderRadius.circular(10.0),
-                            borderSide: const BorderSide
+                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                            borderSide: BorderSide
                             (
                               color: Color.fromARGB(255, 138, 129, 168),
                               width: 2.0,
                               style:BorderStyle.solid
                             )
                           ),
+                          focusedBorder: OutlineInputBorder
+                          (
+                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                            borderSide: BorderSide
+                            (
+                              color: Color.fromARGB(255, 167, 152, 216),
+                              width: 2.0,
+                              style:BorderStyle.solid
+                            )
+                          ),
                         ),
-                        initialValue: 'Password',
-                        style: const TextStyle
-                        (
-                          color: Color.fromARGB(255, 138, 129, 168),
-                          fontWeight: FontWeight.w700
-                        ),
+                      ),
                       ),
                     ],
                   ),
+                  // ),
+                  // Row
+                  // (
+                  //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  //   mainAxisSize: MainAxisSize.max,
+                  //   children: 
+                  //   [
+                  //     TextFormField
+                  //     (
+                  //       decoration: InputDecoration
+                  //       (
+                  //         constraints: BoxConstraints
+                  //         (
+                  //           minWidth: MediaQuery.sizeOf(context).width / 2.7,
+                  //           maxWidth: MediaQuery.sizeOf(context).width / 2.7,
+                  //         ),
+                  //         border: OutlineInputBorder
+                  //         (
+                  //           borderRadius: BorderRadius.circular(10.0),
+                  //           borderSide: const BorderSide
+                  //           (
+                  //             color: Color.fromARGB(255, 138, 129, 168),
+                  //             width: 2.0,
+                  //             style:BorderStyle.solid
+                  //           )
+                  //         ),
+                  //       ),
+                  //       initialValue: 'Password',
+                  //       style: const TextStyle
+                  //       (
+                  //         color: Color.fromARGB(255, 138, 129, 168),
+                  //         fontWeight: FontWeight.w700
+                  //       ),
+                  //     ),
+                  //     TextFormField
+                  //     (
+                  //       decoration: InputDecoration
+                  //       (
+                  //         constraints: BoxConstraints
+                  //         (
+                  //           minWidth: MediaQuery.sizeOf(context).width / 2.7,
+                  //           maxWidth: MediaQuery.sizeOf(context).width / 2.7,
+                  //         ),
+                  //         border: OutlineInputBorder
+                  //         (
+                  //           borderRadius: BorderRadius.circular(10.0),
+                  //           borderSide: const BorderSide
+                  //           (
+                  //             color: Color.fromARGB(255, 138, 129, 168),
+                  //             width: 2.0,
+                  //             style:BorderStyle.solid
+                  //           )
+                  //         ),
+                  //       ),
+                  //       initialValue: 'Password',
+                  //       style: const TextStyle
+                  //       (
+                  //         color: Color.fromARGB(255, 138, 129, 168),
+                  //         fontWeight: FontWeight.w700
+                  //       ),
+                  //     ),
+                  //   ],
+                  // ),
                   const SizedBox(height: 20.0),
                   FilledButton.tonal
                   (
