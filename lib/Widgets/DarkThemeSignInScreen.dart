@@ -182,6 +182,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                           "Don't have an account?",
                           style: TextStyle
                           (
+                            color: Colors.white,
                             fontSize: 15,
                           ),
                         ),
@@ -194,7 +195,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                             style: TextStyle
                             (
                               fontSize: 15,
-                              color: Colors.white,
+                              color: Colors.purple,
                               fontWeight: FontWeight.w700
                             ),
                           ),
@@ -450,13 +451,13 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                       'Create an account',
                       style: TextStyle
                       (
-                        color: Colors.white,
+                        color: Colors.black,
                         fontWeight: FontWeight.w400
                       ),
                     ),
                     style: const ButtonStyle
                     (
-                      backgroundColor: MaterialStatePropertyAll(Color.fromARGB(255, 146, 122, 244)),
+                      backgroundColor: MaterialStatePropertyAll(Colors.white),
                       minimumSize: MaterialStatePropertyAll(Size.fromHeight(50)),
                       maximumSize: MaterialStatePropertyAll(Size.infinite),
                     ),
@@ -472,10 +473,11 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                         "Have an account?",
                         style: TextStyle
                         (
+                          color: Colors.white,
                           fontSize: 15,
                         ),
                       ),
-                      const SizedBox(width: 2.0),
+                      const SizedBox(width: 5.0),
                       GestureDetector
                       (
                         child: const Text
@@ -484,7 +486,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                           style: TextStyle
                           (
                             fontSize: 15,
-                            color: Colors.white,
+                            color: Colors.purple,
                             fontWeight: FontWeight.w700
                           ),
                         ),
