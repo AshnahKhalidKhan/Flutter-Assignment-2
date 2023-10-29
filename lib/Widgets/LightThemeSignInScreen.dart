@@ -519,13 +519,13 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
                 (
                   'lib/Assets/asset2.jpg', 
                   width: double.maxFinite,
-                  fit: BoxFit.fitWidth,
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
             Padding
             (
-              padding: const EdgeInsets.only(left: 30.0, right: 30.0, bottom: 30.0, top: 10.0),
+              padding: const EdgeInsets.only(left: 30.0, right: 30.0, bottom: 60.0, top: 10.0),
               child: Column
               (
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -643,7 +643,6 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
                           ),
                         ),
                       ),
-                      
                       const SizedBox(width: 20.0),
                       Expanded
                       (
@@ -697,6 +696,61 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
                       ),
                     ],
                   ),
+                  const SizedBox(height: 5.0),
+                  FilledButton.tonal
+                  (
+                    onPressed: () {},
+                    child: const Text
+                    (
+                      'Create an account',
+                      style: TextStyle
+                      (
+                        color: Colors.white,
+                        fontWeight: FontWeight.w400
+                      ),
+                    ),
+                    style: const ButtonStyle
+                    (
+                      backgroundColor: MaterialStatePropertyAll(Color.fromARGB(255, 146, 122, 244)),
+                      minimumSize: MaterialStatePropertyAll(Size.fromHeight(50)),
+                      maximumSize: MaterialStatePropertyAll(Size.infinite),
+                    ),
+                  ),
+                  const SizedBox(height: 20.0),
+                  Row
+                  (
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: 
+                    [
+                      const Text
+                      (
+                        "Have an account?",
+                        style: TextStyle
+                        (
+                          fontSize: 15,
+                        ),
+                      ),
+                      const SizedBox(width: 2.0),
+                      GestureDetector
+                      (
+                        child: const Text
+                        (
+                          "Log In",
+                          style: TextStyle
+                          (
+                            fontSize: 15,
+                            color: Color.fromARGB(255, 132, 115, 189),
+                            fontWeight: FontWeight.w700
+                          ),
+                        ),
+                        onTap: () 
+                        {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ],
+                  ),
+                  // const SizedBox(height: 20.0),
                 ],
               ),
             ),
