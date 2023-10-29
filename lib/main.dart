@@ -26,7 +26,28 @@ class MainApp extends StatelessWidget
       // ),
       // home: LightThemeSignInScreen(),
       // home: LightThemeSignUpScreen(),
-      home: DarkThemeSignInScreen(),
+      // home: DarkThemeSignInScreen(),
+      home: Scaffold
+      (
+        body: Column
+        (
+          children: 
+          [
+            ElevatedButton
+            (
+              onPressed: ()
+              {
+                Navigator.push
+                (
+                  context,
+                  CupertinoPageRoute(builder: (context) => const LightThemeSignInScreen()),
+                );
+              },
+              child: Text('Light Theme'),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
