@@ -24,9 +24,35 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
           Text('Log In'),
           TextFormField
           (
-            
+            initialValue: 'Email',
           ),
-        ]
+          TextFormField
+          (
+            initialValue: 'Password',
+          ),
+          FilledButton.tonal
+          (
+            onPressed: () {},
+            child: Text('Sign In')
+          ),
+          Row
+          (
+            children: 
+            [
+              Text("Don't have an account?"),
+              GestureDetector
+              (
+                child: Text('Sign Up'),
+                onTap: () {},
+              ),
+            ],
+          ),
+          GestureDetector
+          (
+            child: Text('ForgotPassword'),
+            onTap: () {},
+          ),
+      
       ),
     );
   }
