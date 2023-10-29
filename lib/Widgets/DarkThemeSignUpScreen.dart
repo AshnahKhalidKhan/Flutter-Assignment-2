@@ -97,6 +97,16 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                           style:BorderStyle.solid
                         )
                       ),
+                      enabledBorder: OutlineInputBorder
+                      (
+                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                        borderSide: BorderSide
+                        (
+                          color: Colors.white,
+                          width: 2.0,
+                          style:BorderStyle.solid
+                        )
+                      ),
                     ),
                   ),
                   const SizedBox(height: 5.0),
