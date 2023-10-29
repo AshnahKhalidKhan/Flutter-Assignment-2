@@ -11,6 +11,7 @@ import 'package:flutter/cupertino.dart';
 
 
 // https://docs.flutter.dev/cookbook/navigation/navigation-basics
+// https://docs.flutter.dev/release/breaking-changes/use-maxLengthEnforcement-instead-of-maxLengthEnforced#:~:text=To%20show%20a%20max%20length,none%20instead%20of%20maxLengthEnforced%3A%20false%20.&text=For%20CupertinoTextField%20%2C%20which%20isn't,t%20set%20the%20maxLength%20value.
 
 
 
@@ -98,6 +99,9 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                   const TextField
                   (
                     // controller: _usernameController,
+                    maxLength: 50,
+                    // maxLengthEnforcement: MaxLengthEnforcement.enforced,
+                    maxLengthEnforcement: MaxLengthEnforcement.none,
                     textAlign: TextAlign.center,
                     expands: false,
                     decoration: InputDecoration
@@ -162,6 +166,7 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                   const TextField
                   (
                     // controller: _usernameController,
+                    maxLength: 20,
                     textAlign: TextAlign.center,
                     expands: false,
                     obscureText: true,
@@ -363,6 +368,9 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
                   const TextField
                   (
                     // controller: _usernameController,
+                    maxLength: 50,
+                    // maxLengthEnforcement: MaxLengthEnforcement.enforced,
+                    maxLengthEnforcement: MaxLengthEnforcement.none,
                     textAlign: TextAlign.center,
                     expands: false,
                     decoration: InputDecoration
@@ -403,102 +411,106 @@ class _LightThemeSignUpScreenState extends State<LightThemeSignUpScreen>
                   ),
                   const SizedBox(height: 20.0),
                   // Expanded(child:
-                  Row
+                  const Row
                   (
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: 
                     [
-                      Expanded(child: 
-                      const TextField
+                      Expanded
                       (
-                        // controller: _usernameController,
-                        textAlign: TextAlign.center,
-                        expands: false,
-                        obscureText: true,
-                        decoration: InputDecoration
+                        child: TextField
                         (
-                          filled: true,
-                          fillColor: Colors.white,
-                          label: Text
+                          // controller: _usernameController,
+                          maxLength: 20,
+                          textAlign: TextAlign.center,
+                          expands: false,
+                          obscureText: true,
+                          decoration: InputDecoration
                           (
-                            "Password",
-                            textAlign: TextAlign.start,
-                            style: TextStyle
+                            filled: true,
+                            fillColor: Colors.white,
+                            label: Text
                             (
-                              color: Color.fromARGB(255, 138, 129, 168),
-                              fontWeight: FontWeight.w700
+                              "Password",
+                              textAlign: TextAlign.start,
+                              style: TextStyle
+                              (
+                                color: Color.fromARGB(255, 138, 129, 168),
+                                fontWeight: FontWeight.w700
+                              ),
                             ),
-                          ),
-                          hintText: 'Create password',
-                          border: OutlineInputBorder
-                          (
-                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                            borderSide: BorderSide
+                            hintText: 'Create password',
+                            border: OutlineInputBorder
                             (
-                              color: Color.fromARGB(255, 138, 129, 168),
-                              width: 2.0,
-                              style:BorderStyle.solid
-                            )
-                          ),
-                          focusedBorder: OutlineInputBorder
-                          (
-                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                            borderSide: BorderSide
+                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderSide: BorderSide
+                              (
+                                color: Color.fromARGB(255, 138, 129, 168),
+                                width: 2.0,
+                                style:BorderStyle.solid
+                              )
+                            ),
+                            focusedBorder: OutlineInputBorder
                             (
-                              color: Color.fromARGB(255, 167, 152, 216),
-                              width: 2.0,
-                              style:BorderStyle.solid
-                            )
+                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderSide: BorderSide
+                              (
+                                color: Color.fromARGB(255, 167, 152, 216),
+                                width: 2.0,
+                                style:BorderStyle.solid
+                              )
+                            ),
                           ),
                         ),
                       ),
-                      ),
-                      SizedBox(width: 20.0),
-                      Expanded(child: 
-                      const TextField
+                      const SizedBox(width: 20.0),
+                      Expanded
                       (
-                        // controller: _usernameController,
-                        textAlign: TextAlign.center,
-                        expands: false,
-                        obscureText: true,
-                        decoration: InputDecoration
+                        child: TextField
                         (
-                          filled: true,
-                          fillColor: Colors.white,
-                          label: Text
+                          // controller: _usernameController,
+                          maxLength: 20,
+                          textAlign: TextAlign.center,
+                          expands: false,
+                          obscureText: true,
+                          decoration: InputDecoration
                           (
-                            "Password",
-                            textAlign: TextAlign.start,
-                            style: TextStyle
+                            filled: true,
+                            fillColor: Colors.white,
+                            label: Text
                             (
-                              color: Color.fromARGB(255, 138, 129, 168),
-                              fontWeight: FontWeight.w700
+                              "Password",
+                              textAlign: TextAlign.start,
+                              style: TextStyle
+                              (
+                                color: Color.fromARGB(255, 138, 129, 168),
+                                fontWeight: FontWeight.w700
+                              ),
+                            ),
+                            hintText: 'Confirm password',
+                            border: OutlineInputBorder
+                            (
+                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderSide: BorderSide
+                              (
+                                color: Color.fromARGB(255, 138, 129, 168),
+                                width: 2.0,
+                                style:BorderStyle.solid
+                              )
+                            ),
+                            focusedBorder: OutlineInputBorder
+                            (
+                              borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                              borderSide: BorderSide
+                              (
+                                color: Color.fromARGB(255, 167, 152, 216),
+                                width: 2.0,
+                                style:BorderStyle.solid
+                              )
                             ),
                           ),
-                          hintText: 'Confirm password',
-                          border: OutlineInputBorder
-                          (
-                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                            borderSide: BorderSide
-                            (
-                              color: Color.fromARGB(255, 138, 129, 168),
-                              width: 2.0,
-                              style:BorderStyle.solid
-                            )
-                          ),
-                          focusedBorder: OutlineInputBorder
-                          (
-                            borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                            borderSide: BorderSide
-                            (
-                              color: Color.fromARGB(255, 167, 152, 216),
-                              width: 2.0,
-                              style:BorderStyle.solid
-                            )
-                          ),
                         ),
-                      ),
                       ),
                     ],
                   ),

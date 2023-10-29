@@ -3,3 +3,10 @@ Always go:
 2. Expanded -> child: Padding -> child: Column
 
 Wrap with SingelChildScrollView to enable scrolling if the content exceeds the available space/overflows.
+
+Difference between:
+maxLengthEnforcement: MaxLengthEnforcement.enforced,
+maxLengthEnforcement: MaxLengthEnforcement.none,
+
+https://docs.flutter.dev/cookbook/navigation/navigation-basics
+https://docs.flutter.dev/release/breaking-changes/use-maxLengthEnforcement-instead-of-maxLengthEnforced#:~:text=To%20show%20a%20max%20length,none%20instead%20of%20maxLengthEnforced%3A%20false%20.&text=For%20CupertinoTextField%20%2C%20which%20isn't,t%20set%20the%20maxLength%20value.
