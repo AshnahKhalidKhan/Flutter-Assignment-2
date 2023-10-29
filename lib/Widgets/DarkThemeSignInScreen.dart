@@ -17,6 +17,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
   {
     return Scaffold
     (
+      backgroundColor: Colors.black,
       resizeToAvoidBottomInset: true,
       body: SafeArea
       (
@@ -55,7 +56,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                       style: TextStyle
                       (
                         fontSize: 25,
-                        color: Color.fromARGB(255, 138, 129, 168),
+                        color: Colors.white,
                         fontWeight: FontWeight.w500
                       ),
                     ),
@@ -79,7 +80,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                           textAlign: TextAlign.start,
                           style: TextStyle
                           (
-                            color: Color.fromARGB(255, 138, 129, 168),
+                            color: Colors.white,
                             fontWeight: FontWeight.w700
                           ),
                         ),
@@ -88,7 +89,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           borderSide: BorderSide
                           (
-                            color: Color.fromARGB(255, 138, 129, 168),
+                            color: Colors.white,
                             width: 2.0,
                             style:BorderStyle.solid
                           )
@@ -98,7 +99,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           borderSide: BorderSide
                           (
-                            color: Color.fromARGB(255, 167, 152, 216),
+                            color: Colors.white,
                             width: 2.0,
                             style:BorderStyle.solid
                           )
@@ -124,7 +125,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                           textAlign: TextAlign.start,
                           style: TextStyle
                           (
-                            color: Color.fromARGB(255, 138, 129, 168),
+                            color: Colors.white,
                             fontWeight: FontWeight.w700
                           ),
                         ),
@@ -133,7 +134,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           borderSide: BorderSide
                           (
-                            color: Color.fromARGB(255, 138, 129, 168),
+                            color: Colors.white,
                             width: 2.0,
                             style:BorderStyle.solid
                           )
@@ -143,7 +144,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                           borderRadius: BorderRadius.all(Radius.circular(10.0)),
                           borderSide: BorderSide
                           (
-                            color: Color.fromARGB(255, 167, 152, 216),
+                            color: Colors.white,
                             width: 2.0,
                             style:BorderStyle.solid
                           )
@@ -159,13 +160,13 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                         'Sign In',
                         style: TextStyle
                         (
-                          color: Colors.white,
+                          color: Colors.black,
                           fontWeight: FontWeight.w400
                         ),
                       ),
                       style: const ButtonStyle
                       (
-                        backgroundColor: MaterialStatePropertyAll(Color.fromARGB(255, 146, 122, 244)),
+                        backgroundColor: MaterialStatePropertyAll(Colors.white),
                         minimumSize: MaterialStatePropertyAll(Size.fromHeight(50)),
                         maximumSize: MaterialStatePropertyAll(Size.infinite),
                       ),
@@ -193,7 +194,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                             style: TextStyle
                             (
                               fontSize: 15,
-                              color: Color.fromARGB(255, 132, 115, 189),
+                              color: Colors.white,
                               fontWeight: FontWeight.w700
                             ),
                           ),
@@ -217,7 +218,7 @@ class _DarkThemeSignInScreenState extends State<DarkThemeSignInScreen>
                         style: TextStyle
                         (
                           fontSize: 15,
-                          color: Color.fromARGB(255, 132, 115, 189),
+                          color: Colors.white,
                           fontWeight: FontWeight.w700
                         ),
                       ),
@@ -249,6 +250,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
   {
     return Scaffold
     (
+      backgroundColor: Colors.black,
       resizeToAvoidBottomInset: true,
       body: SafeArea
       (
@@ -284,7 +286,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                     style: TextStyle
                     (
                       fontSize: 25,
-                      color: Color.fromARGB(255, 138, 129, 168),
+                      color: Colors.white,
                       fontWeight: FontWeight.w500
                     ),
                   ),
@@ -305,7 +307,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                         textAlign: TextAlign.start,
                         style: TextStyle
                         (
-                          color: Color.fromARGB(255, 138, 129, 168),
+                          color: Colors.white,
                           fontWeight: FontWeight.w700
                         ),
                       ),
@@ -314,7 +316,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                         borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         borderSide: BorderSide
                         (
-                          color: Color.fromARGB(255, 138, 129, 168),
+                          color: Colors.white,
                           width: 2.0,
                           style:BorderStyle.solid
                         )
@@ -324,7 +326,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                         borderRadius: BorderRadius.all(Radius.circular(10.0)),
                         borderSide: BorderSide
                         (
-                          color: Color.fromARGB(255, 167, 152, 216),
+                          color: Colors.white,
                           width: 2.0,
                           style:BorderStyle.solid
                         )
@@ -358,7 +360,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                               textAlign: TextAlign.start,
                               style: TextStyle
                               (
-                                color: Color.fromARGB(255, 138, 129, 168),
+                                color: Colors.white,
                                 fontWeight: FontWeight.w700
                               ),
                             ),
@@ -368,7 +370,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                               borderRadius: BorderRadius.all(Radius.circular(10.0)),
                               borderSide: BorderSide
                               (
-                                color: Color.fromARGB(255, 138, 129, 168),
+                                color: Colors.white,
                                 width: 2.0,
                                 style:BorderStyle.solid
                               )
@@ -378,7 +380,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                               borderRadius: BorderRadius.all(Radius.circular(10.0)),
                               borderSide: BorderSide
                               (
-                                color: Color.fromARGB(255, 167, 152, 216),
+                                color: Colors.white,
                                 width: 2.0,
                                 style:BorderStyle.solid
                               )
@@ -409,7 +411,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                               textAlign: TextAlign.start,
                               style: TextStyle
                               (
-                                color: Color.fromARGB(255, 138, 129, 168),
+                                color: Colors.white,
                                 fontWeight: FontWeight.w700
                               ),
                             ),
@@ -419,7 +421,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                               borderRadius: BorderRadius.all(Radius.circular(10.0)),
                               borderSide: BorderSide
                               (
-                                color: Color.fromARGB(255, 138, 129, 168),
+                                color: Colors.white,
                                 width: 2.0,
                                 style:BorderStyle.solid
                               )
@@ -429,7 +431,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                               borderRadius: BorderRadius.all(Radius.circular(10.0)),
                               borderSide: BorderSide
                               (
-                                color: Color.fromARGB(255, 167, 152, 216),
+                                color: Colors.white,
                                 width: 2.0,
                                 style:BorderStyle.solid
                               )
@@ -482,7 +484,7 @@ class _DarkThemeSignUpScreenState extends State<DarkThemeSignUpScreen>
                           style: TextStyle
                           (
                             fontSize: 15,
-                            color: Color.fromARGB(255, 132, 115, 189),
+                            color: Colors.white,
                             fontWeight: FontWeight.w700
                           ),
                         ),
