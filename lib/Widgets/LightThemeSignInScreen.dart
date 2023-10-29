@@ -52,7 +52,7 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
             child: Text('ForgotPassword'),
             onTap: () {},
           ),
-      
+        ]
       ),
     );
   }
