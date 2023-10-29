@@ -164,6 +164,7 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                     // controller: _usernameController,
                     textAlign: TextAlign.center,
                     expands: false,
+                    obscureText: true,
                     decoration: InputDecoration
                     (
                       filled: true,
