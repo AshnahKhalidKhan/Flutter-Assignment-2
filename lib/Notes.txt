@@ -1,3 +1,5 @@
 Always go:
 1. Expanded -> child: Container
 2. Expanded -> child: Padding -> child: Column
+
+Wrap with SingelChildScrollView to enable scrolling if the content exceeds the available space/overflows.

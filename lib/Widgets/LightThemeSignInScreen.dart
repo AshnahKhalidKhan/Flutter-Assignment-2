@@ -479,20 +479,18 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                 (
                   'lib/Assets/asset1.jpg', 
                   width: double.maxFinite,
-                  fit: BoxFit.fitWidth,
+                  fit: BoxFit.fill,
                 ),
               ),
             ),
           // ),
-          Container
+          Expanded
           (
-              height: double.maxFinite,
-              padding: const EdgeInsets.only(left: 30.0, right: 30.0, ),
-              // child: Expanded(
-              //child: Padding
-              //(
-                //padding: const EdgeInsets.only(left: 30.0, right: 30.0, ),
-                child: Expanded (child: Column
+            child: Padding
+            (
+              // padding: const EdgeInsets.only(left: 30.0, right: 30.0, bottom: 30.0, top: 10.0),
+              padding: const EdgeInsets.all(30.0),
+              child: Column
                 (
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children:
@@ -573,7 +571,7 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                         maximumSize: MaterialStatePropertyAll(Size.infinite),
                       ),
                     ),
-                    const SizedBox(height: 10.0),
+                    const SizedBox(height: 20.0),
                     Row
                     (
                       mainAxisAlignment: MainAxisAlignment.start,
@@ -604,7 +602,7 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                         ),
                       ],
                     ),
-                    const SizedBox(height: 10.0),
+                    const SizedBox(height: 20.0),
                     GestureDetector
                     (
                       child: const Text
@@ -621,8 +619,7 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
                     ),
                   ],
                 ),
-                )
-              //),//),
+              )
           ),    
         ],
       ),
