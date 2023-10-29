@@ -14,45 +14,109 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
   @override
   Widget build(BuildContext context) 
   {
-    return Padding
+    return Scaffold
     (
-      padding: EdgeInsets.all(20.0),
-      child: Column
+      body: Padding
       (
-        children: 
-        [
-          Text('Log In'),
-          TextFormField
-          (
-            initialValue: 'Email',
-          ),
-          TextFormField
-          (
-            initialValue: 'Password',
-          ),
-          FilledButton.tonal
-          (
-            onPressed: () {},
-            child: Text('Sign In')
-          ),
-          Row
-          (
-            children: 
-            [
-              Text("Don't have an account?"),
-              GestureDetector
+        padding: EdgeInsets.all(20.0),
+        child: Column
+        (
+          mainAxisAlignment: MainAxisAlignment.end,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: 
+          [
+            Text
+            (
+              "Log In",
+              style: TextStyle
               (
-                child: Text('Sign Up'),
-                onTap: () {},
+                fontSize: 10,
               ),
-            ],
-          ),
-          GestureDetector
-          (
-            child: Text('ForgotPassword'),
-            onTap: () {},
-          ),
-        ]
+            ),
+            Column
+            (
+              children: 
+              [
+                TextFormField
+                (
+                  decoration: InputDecoration
+                  (
+                    border: OutlineInputBorder
+                    (
+                      borderRadius: BorderRadius.circular(10.0)
+                    )
+                  ),
+                  initialValue: 'Email',
+                  style: TextStyle
+                  (
+                    
+                  ),
+                ),
+                TextFormField
+                (
+                  decoration: InputDecoration
+                  (
+                    border: OutlineInputBorder
+                    (
+                      borderRadius: BorderRadius.circular(10.0)
+                    )
+                  ),
+                  initialValue: 'Password',
+                  style: TextStyle
+                  (
+                    
+                  ),
+                ),
+                FilledButton.tonal
+                (
+                  onPressed: () {},
+                  child: Text('Sign In')
+                ),
+                Row
+                (
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: 
+                  [
+                    Text
+                    (
+                      "Don't have an account?",
+                      style: TextStyle
+                      (
+                        fontSize: 10,
+                      ),
+                    ),
+                    SizedBox(width: 2.0,),
+                    GestureDetector
+                    (
+                      child: Text
+                      (
+                        "Sign Up",
+                        style: TextStyle
+                        (
+                          fontSize: 10,
+                        ),
+                      ),
+                      onTap: () {},
+                    ),
+                  ],
+                ),
+                GestureDetector
+                (
+                  child: Text
+                  (
+                    "Forgot Password",
+                    style: TextStyle
+                    (
+                      fontSize: 10,
+                    ),
+                  ),
+                  onTap: () {},
+                ),
+
+              ],
+            )
+          ]
+        ),
       ),
     );
   }
