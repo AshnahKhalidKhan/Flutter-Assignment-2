@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_2assignment_2/Widgets/DarkThemeSignInScreen.dart';
 import 'package:flutter_2assignment_2/Widgets/LightThemeSignInScreen.dart';
 import 'package:flutter_2assignment_2/Widgets/LightThemeSignUpScreen.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter/cupertino.dart';
 
 void main() 
 {
@@ -15,7 +17,7 @@ class MainApp extends StatelessWidget
   @override
   Widget build(BuildContext context) 
   {
-    return const MaterialApp
+    return MaterialApp
     (
       // home: Scaffold
       // (
@@ -31,8 +33,21 @@ class MainApp extends StatelessWidget
       (
         body: Column
         (
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: 
           [
+            ElevatedButton
+            (
+              onPressed: () 
+              {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => LightThemeSignInScreen()),
+                );
+              },
+              child: Text('Light Theme'),
+            ),
             ElevatedButton
             (
               onPressed: ()
@@ -40,10 +55,10 @@ class MainApp extends StatelessWidget
                 Navigator.push
                 (
                   context,
-                  CupertinoPageRoute(builder: (context) => const LightThemeSignInScreen()),
+                  MaterialPageRoute(builder: (context) => DarkThemeSignInScreen()),
                 );
               },
-              child: Text('Light Theme'),
+              child: Text('Dark Theme'),
             ),
           ],
         ),
