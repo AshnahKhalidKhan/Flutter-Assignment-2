@@ -17,212 +17,218 @@ class _LightThemeSignInScreenState extends State<LightThemeSignInScreen>
   {
     return Scaffold
     (
-      body: Column
+      resizeToAvoidBottomInset: true,
+      body: SafeArea
       (
-        crossAxisAlignment: CrossAxisAlignment.end,
-        children: 
-        [
-          Expanded
-          (
-            child: Container
+        child: Column
+        (
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: 
+          [
+            Expanded
             (
-              padding: EdgeInsets.only(left: 15.0, top: 10.0),
-              child: Image.asset
+              child: Container
               (
-                'lib/Assets/asset1.jpg', 
-                width: double.maxFinite,
-                fit: BoxFit.fill,
+                padding: EdgeInsets.only(left: 15.0),
+                child: Image.asset
+                (
+                  'lib/Assets/asset1.jpg', 
+                  width: double.maxFinite,
+                  fit: BoxFit.fill,
+                ),
               ),
             ),
-          ),
-          Expanded
-          (
-            child: Padding
-            (
-              padding: const EdgeInsets.only(left: 30.0, right: 30.0, bottom: 30.0, top: 10.0),
-              child: Column
+            // Expanded
+            // (
+            //   child: Padding
+              Padding
               (
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children:
-                [
-                  const Text
-                  (
-                    "Log In",
-                    style: TextStyle
+                padding: const EdgeInsets.only(left: 30.0, right: 30.0, bottom: 30.0, top: 10.0),
+                child: Column
+                (
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children:
+                  [
+                    const Text
                     (
-                      fontSize: 25,
-                      color: Color.fromARGB(255, 138, 129, 168),
-                      fontWeight: FontWeight.w500
-                    ),
-                  ),
-                  const SizedBox(height: 30.0),
-                  const TextField
-                  (
-                    // controller: _usernameController,
-                    maxLength: 50,
-                    // maxLengthEnforcement: MaxLengthEnforcement.enforced,
-                    maxLengthEnforcement: MaxLengthEnforcement.none,
-                    textAlign: TextAlign.center,
-                    expands: false,
-                    decoration: InputDecoration
-                    (
-                      filled: true,
-                      fillColor: Colors.white,
-                      label: Text
-                      (
-                        "Email",
-                        textAlign: TextAlign.start,
-                        style: TextStyle
-                        (
-                          color: Color.fromARGB(255, 138, 129, 168),
-                          fontWeight: FontWeight.w700
-                        ),
-                      ),
-                      border: OutlineInputBorder
-                      (
-                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                        borderSide: BorderSide
-                        (
-                          color: Color.fromARGB(255, 138, 129, 168),
-                          width: 2.0,
-                          style:BorderStyle.solid
-                        )
-                      ),
-                      focusedBorder: OutlineInputBorder
-                      (
-                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                        borderSide: BorderSide
-                        (
-                          color: Color.fromARGB(255, 167, 152, 216),
-                          width: 2.0,
-                          style:BorderStyle.solid
-                        )
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 5.0),
-                  const TextField
-                  (
-                    // controller: _usernameController,
-                    maxLength: 20,
-                    maxLengthEnforcement: MaxLengthEnforcement.none,
-                    textAlign: TextAlign.center,
-                    expands: false,
-                    obscureText: true,
-                    decoration: InputDecoration
-                    (
-                      filled: true,
-                      fillColor: Colors.white,
-                      label: Text
-                      (
-                        "Password",
-                        textAlign: TextAlign.start,
-                        style: TextStyle
-                        (
-                          color: Color.fromARGB(255, 138, 129, 168),
-                          fontWeight: FontWeight.w700
-                        ),
-                      ),
-                      border: OutlineInputBorder
-                      (
-                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                        borderSide: BorderSide
-                        (
-                          color: Color.fromARGB(255, 138, 129, 168),
-                          width: 2.0,
-                          style:BorderStyle.solid
-                        )
-                      ),
-                      focusedBorder: OutlineInputBorder
-                      (
-                        borderRadius: BorderRadius.all(Radius.circular(10.0)),
-                        borderSide: BorderSide
-                        (
-                          color: Color.fromARGB(255, 167, 152, 216),
-                          width: 2.0,
-                          style:BorderStyle.solid
-                        )
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: 5.0),
-                  FilledButton.tonal
-                  (
-                    onPressed: () {},
-                    child: const Text
-                    (
-                      'Sign In',
+                      "Log In",
                       style: TextStyle
                       (
-                        color: Colors.white,
-                        fontWeight: FontWeight.w400
+                        fontSize: 25,
+                        color: Color.fromARGB(255, 138, 129, 168),
+                        fontWeight: FontWeight.w500
                       ),
                     ),
-                    style: const ButtonStyle
+                    const SizedBox(height: 30.0),
+                    const TextField
                     (
-                      backgroundColor: MaterialStatePropertyAll(Color.fromARGB(255, 146, 122, 244)),
-                      minimumSize: MaterialStatePropertyAll(Size.fromHeight(50)),
-                      maximumSize: MaterialStatePropertyAll(Size.infinite),
-                    ),
-                  ),
-                  const SizedBox(height: 20.0),
-                  Row
-                  (
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: 
-                    [
-                      const Text
+                      // scrollPadding: EdgeInsets.only(bottom: 40.0),
+                      // controller: _usernameController,
+                      maxLength: 50,
+                      // maxLengthEnforcement: MaxLengthEnforcement.enforced,
+                      maxLengthEnforcement: MaxLengthEnforcement.none,
+                      textAlign: TextAlign.center,
+                      expands: false,
+                      decoration: InputDecoration
                       (
-                        "Don't have an account?",
-                        style: TextStyle
+                        filled: true,
+                        fillColor: Colors.white,
+                        label: Text
                         (
-                          fontSize: 15,
-                        ),
-                      ),
-                      const SizedBox(width: 2.0),
-                      GestureDetector
-                      (
-                        child: const Text
-                        (
-                          "Sign Up",
+                          "Email",
+                          textAlign: TextAlign.start,
                           style: TextStyle
                           (
-                            fontSize: 15,
-                            color: Color.fromARGB(255, 132, 115, 189),
+                            color: Color.fromARGB(255, 138, 129, 168),
                             fontWeight: FontWeight.w700
                           ),
                         ),
-                        onTap: ()
-                        {
-                          Navigator.push
+                        border: OutlineInputBorder
+                        (
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide
                           (
-                            context,
-                            CupertinoPageRoute(builder: (context) => const LightThemeSignUpScreen()),
-                          );
-                        },
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 10.0),
-                  GestureDetector
-                  (
-                    child: const Text
-                    (
-                      "Forgot Password?",
-                      style: TextStyle
-                      (
-                        fontSize: 15,
-                        color: Color.fromARGB(255, 132, 115, 189),
-                        fontWeight: FontWeight.w700
+                            color: Color.fromARGB(255, 138, 129, 168),
+                            width: 2.0,
+                            style:BorderStyle.solid
+                          )
+                        ),
+                        focusedBorder: OutlineInputBorder
+                        (
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide
+                          (
+                            color: Color.fromARGB(255, 167, 152, 216),
+                            width: 2.0,
+                            style:BorderStyle.solid
+                          )
+                        ),
                       ),
                     ),
-                    onTap: () {},
-                  ),
-                ],
-              ),
-            ),  
-          ),    
-        ],
+                    const SizedBox(height: 5.0),
+                    const TextField
+                    (
+                      // controller: _usernameController,
+                      maxLength: 20,
+                      maxLengthEnforcement: MaxLengthEnforcement.none,
+                      textAlign: TextAlign.center,
+                      expands: false,
+                      obscureText: true,
+                      decoration: InputDecoration
+                      (
+                        filled: true,
+                        fillColor: Colors.white,
+                        label: Text
+                        (
+                          "Password",
+                          textAlign: TextAlign.start,
+                          style: TextStyle
+                          (
+                            color: Color.fromARGB(255, 138, 129, 168),
+                            fontWeight: FontWeight.w700
+                          ),
+                        ),
+                        border: OutlineInputBorder
+                        (
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide
+                          (
+                            color: Color.fromARGB(255, 138, 129, 168),
+                            width: 2.0,
+                            style:BorderStyle.solid
+                          )
+                        ),
+                        focusedBorder: OutlineInputBorder
+                        (
+                          borderRadius: BorderRadius.all(Radius.circular(10.0)),
+                          borderSide: BorderSide
+                          (
+                            color: Color.fromARGB(255, 167, 152, 216),
+                            width: 2.0,
+                            style:BorderStyle.solid
+                          )
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 5.0),
+                    FilledButton.tonal
+                    (
+                      onPressed: () {},
+                      child: const Text
+                      (
+                        'Sign In',
+                        style: TextStyle
+                        (
+                          color: Colors.white,
+                          fontWeight: FontWeight.w400
+                        ),
+                      ),
+                      style: const ButtonStyle
+                      (
+                        backgroundColor: MaterialStatePropertyAll(Color.fromARGB(255, 146, 122, 244)),
+                        minimumSize: MaterialStatePropertyAll(Size.fromHeight(50)),
+                        maximumSize: MaterialStatePropertyAll(Size.infinite),
+                      ),
+                    ),
+                    const SizedBox(height: 20.0),
+                    Row
+                    (
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: 
+                      [
+                        const Text
+                        (
+                          "Don't have an account?",
+                          style: TextStyle
+                          (
+                            fontSize: 15,
+                          ),
+                        ),
+                        const SizedBox(width: 2.0),
+                        GestureDetector
+                        (
+                          child: const Text
+                          (
+                            "Sign Up",
+                            style: TextStyle
+                            (
+                              fontSize: 15,
+                              color: Color.fromARGB(255, 132, 115, 189),
+                              fontWeight: FontWeight.w700
+                            ),
+                          ),
+                          onTap: ()
+                          {
+                            Navigator.push
+                            (
+                              context,
+                              CupertinoPageRoute(builder: (context) => const LightThemeSignUpScreen()),
+                            );
+                          },
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10.0),
+                    GestureDetector
+                    (
+                      child: const Text
+                      (
+                        "Forgot Password?",
+                        style: TextStyle
+                        (
+                          fontSize: 15,
+                          color: Color.fromARGB(255, 132, 115, 189),
+                          fontWeight: FontWeight.w700
+                        ),
+                      ),
+                      onTap: () {},
+                    ),
+                  ],
+                ),
+              ),  
+            // ),    
+          ],
+        ),
       ),
     );
   }
